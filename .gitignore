@@ -11,8 +11,8 @@
 *.sln.docstates
 .vs/
 appsettings.Development.json
-usuarios.db
-usuarios.db-journal
+users.db
+users.db-journal
 
 # Node & AngularJS
 node_modules/
