@@ -1,0 +1,25 @@
+# .NET
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+*.user
+*.suo
+*.vspscc
+*.vssscc
+*.sln.docstates
+.vs/
+appsettings.Development.json
+usuarios.db
+usuarios.db-journal
+
+# Node & AngularJS
+node_modules/
+dist/
+.angular/
+.vscode/
+.DS_Store
+
+#Dockerfile
+.dockerignore
