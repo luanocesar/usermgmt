@@ -1,14 +1,14 @@
 # Como Instalar e Rodar o Sistema de Gestão de Usuários
 
-Bem-vindo! Este guia vai te ajudar a instalar e rodar o **Sistema de Gestão de Usuários** (usermgmt) na sua máquina (Windows ou Linux). Sem complicação! 🎉
+Bem-vindo! Este guia vai te ajudar a instalar e rodar o **Sistema de Gestão de Usuários** (usermgmt) na sua máquina (Windows ou Linux).
 
 ---
 
-## ✅ Passo 1: Instalar o Docker
+## Passo 1: Instalar o Docker
 
 O Docker é um programa que permite rodar a aplicação de forma isolada e garantida em qualquer máquina.
 
-### 📌 Windows
+### Windows
 
 1. Baixe o **Docker Desktop** em: https://www.docker.com/products/docker-desktop
 2. Execute o instalador
@@ -16,7 +16,7 @@ O Docker é um programa que permite rodar a aplicação de forma isolada e garan
 4. Reinicie o computador quando pedido
 5. Pronto! Docker está instalado
 
-### 📌 Linux (Ubuntu/Debian)
+### Linux (Ubuntu/Debian)
 
 Abra o terminal e execute:
 
@@ -31,7 +31,7 @@ docker --version
 
 ---
 
-## 🚀 Passo 2: Rodar a Aplicação
+## Passo 2: Rodar a Aplicação
 
 ### 1️⃣ **Abra a pasta do projeto**
 
@@ -72,17 +72,17 @@ Quando aparecer essa mensagem, significa que o sistema está pronto! ✅
 
 ---
 
-## 💻 Acessar a Aplicação
+## Acessar a Aplicação
 
 Abra seu navegador (Chrome, Firefox, Edge, etc.) e vá para:
 
-**http://localhost:4200**
+**http://localhost:3000**
 
 Você verá a tela de login. Pronto para usar! 🎯
 
 ### Credenciais padrão:
 - **Email**: `admin@example.com`
-- **Senha**: (pergunte ao administrador)
+- **Senha**: admin123
 
 ---
 
@@ -156,11 +156,11 @@ Com o sistema rodando, você pode:
 
 Os dados são salvos em um arquivo chamado `users.db` na pasta `data/`.
 
-Esse arquivo persiste, então mesmo que você pare e reinicie o sistema, **seus dados continuam lá!** 💾
+Esse arquivo permanece (não vai perder os dados), então mesmo que você pare e reinicie o sistema, **seus dados continuam lá!** 💾
 
 ---
 
-## 🛑 Parar de Usar Completamente
+## Parar de Usar Completamente
 
 Para encerrar completamente e liberar espaço:
 
@@ -172,7 +172,7 @@ docker-compose down
 
 ---
 
-## 📞 Precisa de Ajuda?
+## Precisa de Ajuda?
 
 Se algo não funcionar:
 
@@ -192,7 +192,3 @@ Se algo não funcionar:
 | **Parar a aplicação** | `Ctrl + C` |
 | **Parar completamente** | `docker-compose down` |
 | **Acessar no navegador** | http://localhost:4200 |
-
----
-
-**Aproveite! 🎉**
