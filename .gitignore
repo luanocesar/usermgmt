@@ -13,13 +13,7 @@
 appsettings.Development.json
 users.db
 users.db-journal
-
-# Node & AngularJS
-node_modules/
-dist/
-.angular/
-.vscode/
-.DS_Store
+data
 
 #Dockerfile
 .dockerignore
