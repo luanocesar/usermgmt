@@ -18,10 +18,13 @@ services:
       - ./data:/app/data
     restart: always
 
-  # O SLOT DO FRONTEND (Vazio por enquanto)
-  # web:
-  #   build: ./frontend
-  #   ports:
-  #     - "4200:80"
-  #   depends_on:
-  #     - api
+  frontend:
+    container_name: user-manager-web
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend-api
+    restart: always

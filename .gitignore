@@ -1,19 +1,1 @@
-# .NET
-[Bb]in/
-[Oo]bj/
-*.exe
-*.dll
-*.pdb
-*.user
-*.suo
-*.vspscc
-*.vssscc
-*.sln.docstates
-.vs/
-appsettings.Development.json
-users.db
-users.db-journal
 data
-
-#Dockerfile
-.dockerignore
