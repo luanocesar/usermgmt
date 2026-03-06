@@ -1,0 +1,7 @@
+<div class="min-h-screen bg-slate-50">
+  @if (!isLoggedIn()) {
+    <app-login (onLogin)="onLoginSuccess($event)" />
+  } @else {
+    <app-home (onLogout)="onLogoutSuccess()" />
+  }
+</div>

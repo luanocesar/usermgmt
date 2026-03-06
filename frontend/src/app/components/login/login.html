@@ -1,0 +1,49 @@
+<div class="flex min-h-screen items-center justify-center p-4">
+    <div class="w-full max-w-md bg-white rounded-2xl shadow-xl border border-slate-100 p-8">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-indigo-600">AdminPanel</h1>
+            <p class="text-slate-500 mt-2">Entre na sua conta para gerenciar usuários</p>
+        </div>
+
+        @if (errorMessage()) {
+            <div class="mb-4 p-4 rounded-lg bg-red-50 border border-red-200">
+                <p class="text-sm font-medium text-red-800">{{ errorMessage() }}</p>
+            </div>
+        }
+
+        <form [formGroup]="loginForm" (ngSubmit)="handleLogin()" class="space-y-4">
+            <div>
+                <label class="block text-sm font-semibold mb-1">Email</label>
+                <input 
+                    type="email" 
+                    formControlName="email"
+                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all"
+                    placeholder="seu@email.com"
+                    [disabled]="isLoading()"
+                >
+            </div>
+            <div>
+                <label class="block text-sm font-semibold mb-1">Senha</label>
+                <input 
+                    type="password" 
+                    formControlName="password"
+                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none transition-all"
+                    placeholder="••••••••"
+                    [disabled]="isLoading()"
+                >
+            </div>
+            <button 
+                type="submit"
+                [disabled]="loginForm.invalid || isLoading()"
+                class="w-full bg-indigo-600 hover:bg-indigo-700 disabled:opacity-50 text-white font-bold py-3 rounded-xl transition-all shadow-lg shadow-indigo-200 flex items-center justify-center gap-2"
+            >
+                @if (isLoading()) {
+                    <span class="inline-block animate-spin">⌛</span>
+                    Autenticando...
+                } @else {
+                    Acessar Sistema
+                }
+            </button>
+        </form>
+    </div>
+</div>
