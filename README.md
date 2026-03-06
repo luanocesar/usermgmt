@@ -1,6 +1,6 @@
 # Como Instalar e Rodar o Sistema de Gestão de Usuários
 
-Bem-vindo! Este guia vai te ajudar a instalar e rodar o **Sistema de Gestão de Usuários** na sua máquina (Windows ou Linux). Sem complicação! 🎉
+Bem-vindo! Este guia vai te ajudar a instalar e rodar o **Sistema de Gestão de Usuários** (usermgmt) na sua máquina (Windows ou Linux). Sem complicação! 🎉
 
 ---
 
